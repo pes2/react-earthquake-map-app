@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/* Global Styles */
+:root {
+  --primary-color: #2e86c1;
+  --dark-color: #333333;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.btn-primary,
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-light,
+.bg-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+/* Forms */
+input[type="date"],
+select,
+textarea {
+  display: block;
+  /* width: 30%; */
+  padding: 0.4rem;
+  /* font-size: 1.2rem; */
+  border: 1px solid #ccc;
+}
+
+input[type="submit"],
+button {
+  font: inherit;
+}
+
+.form {
+  margin-top: 20px;
+  margin-bottom: 75px;
+}
+
+/* test */
+.form2 {
+  margin: 5px;
+}
+
+.filter-column2 {
+  width: 100px;
+}
+
+/* Utilities */
+.container {
+  /* max-width: 1100px; */
+  margin: auto;
+  overflow: hidden;
+  padding: 0;
+}
+
+.container-text {
+  max-width: 1100px;
+  margin-top: 40px;
+}
+
+.leaflet-container {
+  height: 700px;
+  width: auto;
+}
+
+/* Text Styles */
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+.navbar a:hover {
+  color: var(--light-color);
+}
+
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.legend {
+  text-align: left;
+  line-height: 18px;
+  color: #555;
+}
+
+/* .legend > * {
+  display: flex;
+  margin-bottom: 5px;
+} */
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+  padding-bottom: 2px;
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+  /* Text Styles */
+  .lead {
+    font-size: 1rem;
+  }
+
+  /* Navbar */
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar ul {
+    text-align: center;
+    justify-content: center;
+  }
+}
